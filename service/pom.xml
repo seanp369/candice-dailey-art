@@ -4,15 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gallery-web-app</artifactId>
+    <artifactId>service</artifactId>
 
     <parent>
-        <artifactId>gallery-parent</artifactId>
-        <groupId>com.dailey.candice</groupId>
+        <groupId>com.candicedailey.art</groupId>
+        <artifactId>site-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>com.candicedailey.art</groupId>
+            <artifactId>client</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

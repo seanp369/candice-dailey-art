@@ -1,4 +1,4 @@
-package com.dailey.candice.api.response;
+package com.candicedailey.art.api.response;
 
 public class Image {
 

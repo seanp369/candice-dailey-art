@@ -37,5 +37,11 @@
             <groupId>org.webjars.npm</groupId>
             <artifactId>angular-bootstrap-lightbox</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>angular-loading-bar</artifactId>
+            <version>0.9.0</version>
+        </dependency>
     </dependencies>
 </project>

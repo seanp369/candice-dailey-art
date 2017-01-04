@@ -54,9 +54,66 @@
 }
 
 .contact-info li {
-    margin: 15px 0px;
+  margin: 15px 0px;
 }
 
 .logo {
-    margin: 25px;
+  margin: 25px;
 }
+
+.nav-icon-left {
+  padding-right: 5px;
+}
+
+.nav-icon-right {
+  padding-left: 5px;
+}
+
+.btn {
+  border: none;
+}
+
+.btn-group a {
+  margin-left: 0px !important;
+}
+
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #797a7d;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+  padding: 1px 10px;
+}
+
+#loading-bar-spinner {
+  top: 20px;
+  left: 15px;
+}
+
+#loading-bar-spinner .spinner-icon {
+  border-top-color:  #797a7d;
+  border-left-color: #797a7d;
+}
+
+.close{
+  opacity: .4;
+}
+
+.close:focus {
+  outline: none;
+}
+
+/* The following are unnecessary while the loading bar is disabled */
+/*
+#image-load-container {
+  height: 5px;
+  width: auto;
+  margin-bottom: 2px;
+}
+
+#loading-bar .bar {
+  position: relative;
+}
+*/

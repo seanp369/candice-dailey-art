@@ -1,4 +1,4 @@
-var cdGallery = angular.module('cdGallery', ['bootstrapLightbox', 'ngTouch', 'ngRoute']);
+var cdGallery = angular.module('cdGallery', ['bootstrapLightbox', 'ngTouch', 'ngRoute', 'angular-loading-bar', 'ngAnimate']);
 
 cdGallery.config(function($routeProvider, $locationProvider) {
     $routeProvider
@@ -17,3 +17,13 @@ cdGallery.config(function($routeProvider, $locationProvider) {
             $locationProvider.html5Mode({enabled: true, requireBase: false});
         }
 });
+
+cdGallery.config(function (LightboxProvider) {
+  LightboxProvider.fullScreenMode = true;
+  LightboxProvider.templateUrl = 'html/image-view.html';
+});
+
+cdGallery.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeBar = false;
+    cfpLoadingBarProvider.parentSelector = '#image-load-container';
+}]);

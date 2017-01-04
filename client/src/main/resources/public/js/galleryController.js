@@ -55,7 +55,3 @@ cdGallery.controller('galleryController', function ($scope, Lightbox) {
         Lightbox.openModal($scope.images, index);
     };
 });
-
-cdGallery.config(function (LightboxProvider) {
-  LightboxProvider.fullScreenMode = true;
-});

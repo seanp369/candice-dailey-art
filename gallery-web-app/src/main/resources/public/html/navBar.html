@@ -1,0 +1,31 @@
+<div ng-controller="navBarController">
+    <div class="text-center logo">
+        <a href="home" ng-click="isCollapsed = true"><img class="nav-img" src="img/logo.jpg"></a>
+    </div>
+
+    <nav class="navbar navbar-default custom-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="pull-left navbar-toggle" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse" ng-class="{collapse: isCollapsed}">
+                <ul class="nav navbar-nav">
+                    <li><a href="home" ng-click="isCollapsed = true">Home</a></li>
+                    <li><a href="gallery" ng-click="isCollapsed = true">Gallery</a></li>
+                    <li><a href="about" ng-click="isCollapsed = true">About</a></li>
+                    <li><a href="contact" ng-click="isCollapsed = true">Contact</a></li>
+                    <li><a href="http://cdaileydoodle.blogspot.com/">Blog</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.facebook.com/DaileyDoodle/"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/thedaileydoodle/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

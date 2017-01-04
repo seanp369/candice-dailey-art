@@ -104,16 +104,3 @@
 .close:focus {
   outline: none;
 }
-
-/* The following are unnecessary while the loading bar is disabled */
-/*
-#image-load-container {
-  height: 5px;
-  width: auto;
-  margin-bottom: 2px;
-}
-
-#loading-bar .bar {
-  position: relative;
-}
-*/

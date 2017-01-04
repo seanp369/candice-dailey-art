@@ -25,5 +25,5 @@ cdGallery.config(function (LightboxProvider) {
 
 cdGallery.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
     cfpLoadingBarProvider.includeBar = false;
-    cfpLoadingBarProvider.parentSelector = '#image-load-container';
+    cfpLoadingBarProvider.parentSelector = '.lightbox-image-container';
 }]);

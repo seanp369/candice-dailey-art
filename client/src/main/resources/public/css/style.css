@@ -104,12 +104,3 @@
 .close:focus {
   outline: none;
 }
-
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    margin-top: 5px;
-}
-.navbar .navbar-collapse {
-    text-align: center;
-}

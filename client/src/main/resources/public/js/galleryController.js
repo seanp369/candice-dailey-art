@@ -2,6 +2,18 @@ cdGallery.controller('galleryController', function ($scope, Lightbox) {
 
     $scope.images = [
       {
+        'url': 'img/gallery/primary/JynErso.jpg',
+        'thumbUrl': 'img/gallery/thumb/JynErso.jpg'
+      },
+      {
+        'url': 'img/gallery/primary/WonderWoman.jpg',
+        'thumbUrl': 'img/gallery/thumb/WonderWoman.jpg'
+      },
+      {
+        'url': 'img/gallery/primary/Powergirl.jpg',
+        'thumbUrl': 'img/gallery/thumb/Powergirl.jpg'
+      },
+      {
         'url': 'img/gallery/primary/cersiePortrait.jpg',
         'thumbUrl': 'img/gallery/thumb/cersiePortrait.jpg'
       },

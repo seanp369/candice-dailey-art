@@ -2,6 +2,16 @@
   padding: 0;
 }
 
+.gallery img {
+  width: 150px;
+  height: 230px;
+}
+
+.gallery img:hover {
+  background-color: #797a7d;
+  cursor: pointer;
+}
+
 .gallery li {
   display: inline-block;
   margin: 0 1em 1em 0;
@@ -13,16 +23,6 @@
   .gallery li {
     margin: 0;
   }
-}
-
-.gallery1 img {
-  width: 150px;
-  height: 230px;
-}
-
-.gallery1 img:hover {
-  background-color: #797a7d;
-  cursor: pointer;
 }
 
 .custom-nav {
@@ -54,7 +54,15 @@
 }
 
 .contact-info li {
-  margin: 15px 0px;
+  margin: 25px 0px;
+}
+
+.contact-info li div {
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  color: #777;
 }
 
 .logo {
@@ -103,4 +111,18 @@
 
 .close:focus {
   outline: none;
+}
+
+/*The below handles browsers where the vertical scroll bar shifts certain views when the overflow exists*/
+body {
+    overflow-y: scroll;
+}
+
+body.modal-open {
+overflow-y: scroll;
+margin: 0;
+}
+
+.modal {
+overflow: auto;
 }

@@ -2,6 +2,10 @@ cdGallery.controller('galleryController', function ($scope, Lightbox) {
 
     $scope.images = [
       {
+        'url': 'img/gallery/primary/CassianAndor.jpg',
+        'thumbUrl': 'img/gallery/thumb/CassianAndor.jpg'
+      },
+      {
         'url': 'img/gallery/primary/JynErso.jpg',
         'thumbUrl': 'img/gallery/thumb/JynErso.jpg'
       },

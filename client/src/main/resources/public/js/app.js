@@ -19,7 +19,7 @@ cdGallery.config(function($routeProvider, $locationProvider) {
 });
 
 cdGallery.config(function (LightboxProvider) {
-  LightboxProvider.fullScreenMode = true;
+  //LightboxProvider.fullScreenMode = true;
   LightboxProvider.templateUrl = 'html/image-view.html';
 });
 

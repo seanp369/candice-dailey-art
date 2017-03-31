@@ -3,19 +3,19 @@ cdGallery.controller('galleryController', function ($scope, Lightbox) {
     $scope.images = createImagesArray([
         'WhiteRider.jpg',
         'RogueOne.jpg',
+        'pheonix.jpg',
+        'Luke.jpg',
         'Cliffside.jpg',
         'Powergirl.jpg',
-        'pheonix.jpg',
         'ChuChu.jpg',
         'WonderWoman.jpg',
         'Fett.jpg',
         'Line_Up.jpg',
-        'Luke.jpg',
         'Mr.French.jpg',
         'Mr.French2.jpg',
         'cersiePortrait.jpg',
-        'tiger.jpg',
         'Vanellope.jpg',
+        'tiger.jpg',
         'Zebra.jpg'
     ]);
 

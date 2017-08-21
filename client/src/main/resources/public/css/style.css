@@ -1,88 +1,109 @@
 .gallery {
-  padding: 0;
+    padding: 0;
 }
 
 .gallery img {
-  width: 150px;
-  height: 230px;
+    width: 150px;
+    height: 230px;
 }
 
 .gallery img:hover {
-  background-color: #797a7d;
-  cursor: pointer;
+    background-color: #797a7d;
+    cursor: pointer;
 }
 
 .gallery li {
-  display: inline-block;
-  margin: 0 1em 1em 0;
-  list-style-type: none;
-  text-align: center;
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.portfolio {
+    -webkit-padding-start: 0px;
+}
+
+.portfolio img {
+    max-width: 100%;
+    width: 620px;
+    height: auto;
+}
+
+.portfolio img:hover {
+    cursor: pointer;
+}
+
+.portfolio li {
+    display: inline-block;
+    margin-bottom: 20px;
+    list-style-type: none;
+    text-align: center;
 }
 
 @media (max-width: 767px) {
-  .gallery li {
-    margin: 0;
-  }
+    .gallery li {
+        margin: 0;
+    }
 }
 
 .custom-nav {
-  background-color: inherit;
-  border-style: solid;
-  border-width: 1px 0 1px 0;
+    background-color: inherit;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
 }
 
 .footer {
-  margin-top: 100px;
-  padding-top: 20px;
-  border-top: 1px solid;
-  border-color: #e7e7e7;
+    margin-top: 100px;
+    padding-top: 20px;
+    border-top: 1px solid;
+    border-color: #e7e7e7;
 }
 
 .nav-img {
-  max-width: auto;
-  max-height: 100px;
+    max-width: auto;
+    max-height: 100px;
 }
 
 .banner-img {
-  max-width: 100%;
-  max-height: auto;
+    max-width: 100%;
+    max-height: auto;
 }
 
 .nav-img {
-  max-width: auto;
-  max-height: 100px;
+    max-width: auto;
+    max-height: 100px;
 }
 
 .contact-info li {
-  margin: 25px 0px;
+    margin: 25px 0px;
 }
 
 .contact-info li div {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .contact-info a {
-  color: #777;
+    color: #777;
 }
 
 .logo {
-  margin: 25px;
+    margin: 25px;
 }
 
 .nav-icon-left {
-  padding-right: 5px;
+    padding-right: 5px;
 }
 
 .nav-icon-right {
-  padding-left: 5px;
+    padding-left: 5px;
 }
 
 .btn {
-  border: none;
+    border: none;
 }
 
 .btn-group a {
-  margin-left: 0px !important;
+    margin-left: 0px !important;
 }
 
 .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
@@ -92,25 +113,25 @@
 }
 
 .btn-group-xs>.btn, .btn-xs {
-  padding: 1px 10px;
+    padding: 1px 10px;
 }
 
 #loading-bar-spinner {
-  top: 20px;
-  left: 15px;
+    top: 20px;
+    left: 15px;
 }
 
 #loading-bar-spinner .spinner-icon {
-  border-top-color:  #797a7d;
-  border-left-color: #797a7d;
+    border-top-color:  #797a7d;
+    border-left-color: #797a7d;
 }
 
 .close{
-  opacity: .4;
+    opacity: .4;
 }
 
 .close:focus {
-  outline: none;
+    outline: none;
 }
 
 /*The below handles browsers where the vertical scroll bar shifts certain views when the overflow exists*/
@@ -119,10 +140,10 @@ body {
 }
 
 body.modal-open {
-overflow-y: scroll;
-margin: 0;
+    overflow-y: scroll;
+    margin: 0;
 }
 
 .modal {
-overflow: auto;
+    overflow: auto;
 }

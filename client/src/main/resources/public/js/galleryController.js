@@ -1,8 +1,10 @@
 cdGallery.controller('galleryController', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
+        'let-the-past-die.jpg',
         'hux.jpg',
         'Degobah.jpg',
+        'satyr.jpg',
         'mario-wars.jpg',
         'DragonFly.jpg',
         'assaj.jpg',

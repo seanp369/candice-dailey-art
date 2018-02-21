@@ -8,7 +8,10 @@ cdGallery.config(function($routeProvider, $locationProvider) {
             templateUrl : 'html/gallery.html',
             controller  : 'galleryController'
         })
-
+        .when('/gallery2', {
+            templateUrl : 'html/gallery.html',
+            controller  : 'galleryController2'
+        })
         .when('/portfolio/mayday-games', {
             templateUrl : 'html/portfolio.html',
             controller  : 'portfolioController'
@@ -17,7 +20,6 @@ cdGallery.config(function($routeProvider, $locationProvider) {
             templateUrl : 'html/portfolio.html',
             controller  : 'portfolioController2'
         })
-
         .when('/about', {templateUrl : 'html/about.html'})
         .when('/contact', {templateUrl : 'html/contact.html'})
         .when('/404', {templateUrl : 'html/404.html'})

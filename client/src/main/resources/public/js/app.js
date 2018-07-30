@@ -20,6 +20,10 @@ cdGallery.config(function($routeProvider, $locationProvider) {
             templateUrl : 'html/portfolio.html',
             controller  : 'portfolioController2'
         })
+        .when('/portfolio/acme-archives', {
+            templateUrl : 'html/portfolio.html',
+            controller  : 'portfolioController3'
+        })
         .when('/about', {templateUrl : 'html/about.html'})
         .when('/contact', {templateUrl : 'html/contact.html'})
         .when('/404', {templateUrl : 'html/404.html'})

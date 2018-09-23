@@ -24,6 +24,10 @@ cdGallery.config(function($routeProvider, $locationProvider) {
             templateUrl : 'html/portfolio.html',
             controller  : 'portfolioController3'
         })
+        .when('/portfolio/anime-stl', {
+            templateUrl : 'html/portfolio.html',
+            controller  : 'animeStlPortfolioController'
+        })
         .when('/about', {templateUrl : 'html/about.html'})
         .when('/contact', {templateUrl : 'html/contact.html'})
         .when('/404', {templateUrl : 'html/404.html'})

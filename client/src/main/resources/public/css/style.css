@@ -2,6 +2,11 @@
     padding: 0;
 }
 
+.about-header {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 .gallery img {
     width: 150px;
     height: 230px;

@@ -4,13 +4,17 @@ cdGallery.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {redirectTo: '/home'})
         .when('/home', {templateUrl : 'html/home.html'})
-        .when('/gallery', {
+        .when('/oil-acrylic', {
             templateUrl : 'html/gallery.html',
-            controller  : 'galleryController'
+            controller  : 'oilAcrylicGalleryController'
         })
-        .when('/gallery2', {
+        .when('/watercolor', {
             templateUrl : 'html/gallery.html',
-            controller  : 'galleryController2'
+            controller  : 'watercolorGalleryController'
+        })
+        .when('/watercolor-portrait', {
+            templateUrl : 'html/gallery.html',
+            controller  : 'watercolorPortraitsController'
         })
         .when('/portfolio/mayday-games', {
             templateUrl : 'html/portfolio.html',

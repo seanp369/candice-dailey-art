@@ -1,9 +1,12 @@
-cdGallery.controller('galleryController2', function ($scope, Lightbox) {
+cdGallery.controller('watercolorPortraitsController', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
+        'Gimli.jpg',
+        'joker.jpg',
         'KhalDrogo.jpg',
         'Dany.jpg',
         'JonSnow.jpg',
+        'Ygritte.jpg',
         'Tormund.jpg',
         'littlefinger.jpg',
         'Gendry.jpg',

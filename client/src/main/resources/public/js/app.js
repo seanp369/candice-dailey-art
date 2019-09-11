@@ -8,13 +8,13 @@ cdGallery.config(function($routeProvider, $locationProvider) {
             templateUrl : 'html/gallery.html',
             controller  : 'oilAcrylicGalleryController'
         })
-        .when('/watercolor', {
+        .when('/watercolor-gouache', {
             templateUrl : 'html/gallery.html',
-            controller  : 'watercolorGalleryController'
+            controller  : 'watercolorGouacheGalleryController'
         })
-        .when('/watercolor-portrait', {
+        .when('/anime', {
             templateUrl : 'html/gallery.html',
-            controller  : 'watercolorPortraitsController'
+            controller  : 'animeGalleryController'
         })
         .when('/portfolio/mayday-games', {
             templateUrl : 'html/portfolio.html',

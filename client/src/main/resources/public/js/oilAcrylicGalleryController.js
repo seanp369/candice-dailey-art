@@ -1,13 +1,13 @@
 cdGallery.controller('oilAcrylicGalleryController', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
+        'SerandtheRoyalStarsWEB.jpg',
+        'RenLast JediWEB.jpg',
+        'AngelElfWEB.jpg',
         'mithrandir.jpg',
         'ren.jpg',
         'MaulWWEB.jpg',
         'hux.jpg',
-        'Siths.jpg',
-        'Degobah.jpg',
-        'OldBenWEB.jpg',
         'pheonix.jpg',
         'korl.jpg',
         'tiger.jpg',

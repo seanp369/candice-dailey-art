@@ -2,35 +2,10 @@ var cdGallery = angular.module('cdGallery', ['bootstrapLightbox', 'ngTouch', 'ng
 
 cdGallery.config(function($routeProvider, $locationProvider) {
     $routeProvider
-        .when('/', {redirectTo: '/home'})
-        .when('/home', {templateUrl : 'html/home.html'})
-        .when('/oil-acrylic', {
+        .when('/', {redirectTo: '/portfolio'})
+        .when('/portfolio', {
             templateUrl : 'html/gallery.html',
-            controller  : 'oilAcrylicGalleryController'
-        })
-        .when('/watercolor-gouache', {
-            templateUrl : 'html/gallery.html',
-            controller  : 'watercolorGouacheGalleryController'
-        })
-        .when('/anime', {
-            templateUrl : 'html/gallery.html',
-            controller  : 'animeGalleryController'
-        })
-        .when('/portfolio/mayday-games', {
-            templateUrl : 'html/portfolio.html',
-            controller  : 'portfolioController'
-        })
-        .when('/portfolio/plaid-hat-games', {
-            templateUrl : 'html/portfolio.html',
-            controller  : 'portfolioController2'
-        })
-        .when('/portfolio/acme-archives', {
-            templateUrl : 'html/portfolio.html',
-            controller  : 'portfolioController3'
-        })
-        .when('/portfolio/anime-stl', {
-            templateUrl : 'html/portfolio.html',
-            controller  : 'animeStlPortfolioController'
+            controller  : 'portfolioGallery'
         })
         .when('/about', {templateUrl : 'html/about.html'})
         .when('/contact', {templateUrl : 'html/contact.html'})

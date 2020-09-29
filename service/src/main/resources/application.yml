@@ -1,0 +1,19 @@
+server:
+  compression:
+    enabled: true
+    mime-types: application/javascript,text/html,text/css,image/jpeg,image/png,image/gif
+  port: 5000
+spring:
+  resources:
+    cache:
+      period: 31536000
+    chain:
+      enabled: true
+      html-application-cache: true
+      strategy:
+        fixed:
+          enabled: true
+          version: '@project.version@'
+  thymeleaf:
+    cache: false
+    prefix: classpath:/public/

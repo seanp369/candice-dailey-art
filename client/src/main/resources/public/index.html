@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="cdGallery">
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
+        <title>Candice Dailey Illustration</title>
+        <link rel="icon" href="img/favicon.png">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <base href="/">
-        <link rel="icon" href="img/favicon.png">
-        <title>Candice Dailey Illustration</title>
+
+        <link href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/webjars/angular-bootstrap-lightbox/0.12.0/dist/angular-bootstrap-lightbox.min.css" rel="stylesheet">
+        <link href="/webjars/angular-loading-bar/0.9.0/loading-bar.min.css" rel="stylesheet">
+
+        <link th:href="@{/css/style.css}" rel="stylesheet">
+    </head>
+
+    <body ng-app="cdGallery">
+        <div class="container">
+            <div ng-include="views.navBar"></div>
+            <div id="main" ng-view></div>
+            <div ng-include="views.footer"></div>
+        </div>
+
+        <script th:inline="javascript">
+            /*<!CDATA[*/
+            var views = {};
+            views._404 = /*[[@{/html/404.html}]]*/ '/html/404.html';
+            views.about = /*[[@{/html/about.html}]]*/ '/html/about.html';
+            views.contact = /*[[@{/html/contact.html}]]*/ '/html/contact.html';
+            views.gallery = /*[[@{/html/gallery.html}]]*/ '/html/gallery.html';
+            views.image_view = /*[[@{/html/image-view.html}]]*/ '/html/image-view.html';
+            views.footer = /*[[@{/html/footer.html}]]*/ '/html/footer.html';
+            views.navBar = /*[[@{/html/navBar.html}]]*/ '/html/navBar.html';
+            /*]]>*/
+        </script>
 
         <script src="/webjars/angularjs/1.5.8/angular.min.js" type="application/javascript"></script>
         <script src="/webjars/angularjs/1.5.8/angular-route.min.js" type="application/javascript"></script>
@@ -17,28 +45,9 @@
         <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js" type="application/javascript"></script>
         <script src="/webjars/angular-bootstrap-lightbox/0.12.0/dist/angular-bootstrap-lightbox.min.js" type="application/javascript"></script>
         <script src="/webjars/angular-loading-bar/0.9.0/loading-bar.min.js" type="application/javascript"></script>
-        <script src="js/app.js"></script>
-        <script src="js/oilAcrylicGalleryController.js"></script>
-        <script src="js/watercolorGouacheGalleryController.js"></script>
-        <script src="js/animeGalleryController.js"></script>
-        <script src="js/portfolioController.js"></script>
-        <script src="js/portfolioController2.js"></script>
-        <script src="js/portfolioController3.js"></script>
-        <script src="js/animeStlPortfolioController.js"></script>
-        <script src="js/navBarController.js"></script>
 
-        <link href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/webjars/angular-bootstrap-lightbox/0.12.0/dist/angular-bootstrap-lightbox.min.css" rel="stylesheet">
-        <link href="/webjars/angular-loading-bar/0.9.0/loading-bar.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <div class="container">
-            <div ng-include="'html/navBar.html'"></div>
-            <div id="main"><div ng-view></div></div>
-            <div ng-include="'html/footer.html'"></div>
-        </div>
+        <script th:src="@{/js/app.js}" type="application/javascript"></script>
+        <script th:src="@{/js/portfolioController.js}" type="application/javascript"></script>
+        <script th:src="@{/js/navBarController.js}" type="application/javascript"></script>
     </body>
 </html>

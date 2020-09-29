@@ -1,15 +1,19 @@
 var cdGallery = angular.module('cdGallery', ['bootstrapLightbox', 'ngTouch', 'ngRoute', 'angular-loading-bar', 'ngAnimate']);
 
+cdGallery.run(function ($rootScope) {
+    $rootScope.views = views;
+});
+
 cdGallery.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {redirectTo: '/portfolio'})
         .when('/portfolio', {
-            templateUrl : 'html/gallery.html',
+            templateUrl : views.gallery,
             controller  : 'portfolioGallery'
         })
-        .when('/about', {templateUrl : 'html/about.html'})
-        .when('/contact', {templateUrl : 'html/contact.html'})
-        .when('/404', {templateUrl : 'html/404.html'})
+        .when('/about', {templateUrl : views.about})
+        .when('/contact', {templateUrl : views.contact})
+        .when('/404', {templateUrl : views._404})
         .otherwise({redirectTo: '/404'})
 
         if(window.history && window.history.pushState){
@@ -19,7 +23,7 @@ cdGallery.config(function($routeProvider, $locationProvider) {
 
 cdGallery.config(function (LightboxProvider) {
   //LightboxProvider.fullScreenMode = true;
-  LightboxProvider.templateUrl = 'html/image-view.html';
+  LightboxProvider.templateUrl = views.image_view;
 });
 
 cdGallery.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {

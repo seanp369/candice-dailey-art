@@ -1,6 +1,7 @@
 cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
+        'OMG3.jpg',
         'DuskRider.jpg',
         'OMG-1.jpg',
         'OMG-2.jpg',

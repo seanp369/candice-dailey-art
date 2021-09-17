@@ -1,36 +1,37 @@
 cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
-        'ThePullToTheLight.jpg',
-        'DarkVisions.jpg',
-        'Firefly.jpg',
-        'OMG3.jpg',
-        'DuskRider.jpg',
-        'OMG-1.jpg',
-        'OMG-2.jpg',
-        'SoulKeeper.jpg',
-        'Hive.jpg',
-        'Eurydice.jpg',
-        'Sera.jpg',
-        'Bard.jpg',
-        'SnakeDemon.jpg',
-        'Angel.jpg',
-        'Misery.jpg',
-        'Pheonix.jpg',
+        {'file': 'ThePullToTheLight.jpg', 'caption': '© & TM 2021 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
+        {'file': 'DarkVisions.jpg', 'caption': '© & TM 2020 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
+        {'file': 'Firefly.jpg', 'caption': 'FIREFLY TM & © 2021 Twentieth Century Fox Film Corporation. All Rights Reserved.'},
+        {'file': 'OMG3.jpg'},
+        {'file': 'DuskRider.jpg'},
+        {'file': 'OMG-1.jpg'},
+        {'file': 'OMG-2.jpg'},
+        {'file': 'SoulKeeper.jpg'},
+        {'file': 'Hive.jpg'},
+        {'file': 'Eurydice.jpg'},
+        {'file': 'Sera.jpg'},
+        {'file': 'Bard.jpg'},
+        {'file': 'SnakeDemon.jpg'},
+        {'file': 'Angel.jpg'},
+        {'file': 'Misery.jpg'},
+        {'file': 'Pheonix.jpg'}
     ]);
 
     $scope.openLightboxModal = function (index) {
         Lightbox.openModal($scope.images, index);
     };
 
-    function createImagesArray(imagesNames) {
-        var images = [];
-        for (i = 0; i < imagesNames.length; i++) {
-            images.push({
-                'url': 'img/gallery/primary/' + imagesNames[i],
-                'thumbUrl': 'img/gallery/thumb/' + imagesNames[i]
+    function createImagesArray(images) {
+        var result = [];
+        for (i = 0; i < images.length; i++) {
+            result.push({
+                'url': 'img/gallery/primary/' + images[i].file,
+                'thumbUrl': 'img/gallery/thumb/' + images[i].file,
+                'caption': images[i].caption
             });
         }
-        return images;
+        return result;
     }
 });

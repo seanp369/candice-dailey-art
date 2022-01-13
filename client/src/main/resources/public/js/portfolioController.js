@@ -1,9 +1,11 @@
 cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
+        {'file': 'Life Stolen.jpg'},
+        {'file': 'AnUnderstanding.jpg', 'caption': '© & TM 2021 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
         {'file': 'ThePullToTheLight.jpg', 'caption': '© & TM 2021 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
         {'file': 'DarkVisions.jpg', 'caption': '© & TM 2020 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
-        {'file': 'Firefly.jpg', 'caption': 'FIREFLY TM & © 2021 Twentieth Century Fox Film Corporation. All Rights Reserved.'},
+        {'file': 'Ferryman.jpg'},
         {'file': 'OMG3.jpg'},
         {'file': 'DuskRider.jpg'},
         {'file': 'OMG-1.jpg'},
@@ -11,6 +13,7 @@ cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
         {'file': 'SoulKeeper.jpg'},
         {'file': 'Hive.jpg'},
         {'file': 'Eurydice.jpg'},
+        {'file': 'Firefly.jpg', 'caption': 'FIREFLY TM & © 2021 Twentieth Century Fox Film Corporation. All Rights Reserved.'},
         {'file': 'Sera.jpg'},
         {'file': 'Bard.jpg'},
         {'file': 'SnakeDemon.jpg'},

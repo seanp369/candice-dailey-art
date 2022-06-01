@@ -1,6 +1,9 @@
 cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
+        {'file': 'DarkAspirations.jpg', 'caption': '© & TM 2022 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
+        {'file': 'Geonosis.jpg', 'caption': '© & TM 2022 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
+        {'file': 'Betty-Veronica.jpg'},
         {'file': 'Life Stolen.jpg'},
         {'file': 'AnUnderstanding.jpg', 'caption': '© & TM 2021 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
         {'file': 'ThePullToTheLight.jpg', 'caption': '© & TM 2021 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
@@ -17,7 +20,7 @@ cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
         {'file': 'Sera.jpg'},
         {'file': 'Bard.jpg'},
         {'file': 'SnakeDemon.jpg'},
-        {'file': 'Angel.jpg'},
+//        {'file': 'Angel.jpg'},
         {'file': 'Misery.jpg'},
         {'file': 'Pheonix.jpg'}
     ]);

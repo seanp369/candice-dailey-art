@@ -17,7 +17,7 @@ cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
         {'file': 'Hive.jpg'},
         {'file': 'Eurydice.jpg'},
         {'file': 'Firefly.jpg', 'caption': 'FIREFLY TM & © 2021 Twentieth Century Fox Film Corporation. All Rights Reserved.'},
-        {'file': 'Sera.jpg'},
+//        {'file': 'Sera.jpg'},
         {'file': 'Bard.jpg'},
         {'file': 'SnakeDemon.jpg'},
 //        {'file': 'Angel.jpg'},

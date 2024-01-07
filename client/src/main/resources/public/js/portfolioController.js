@@ -1,8 +1,12 @@
 cdGallery.controller('portfolioGallery', function ($scope, Lightbox) {
 
     $scope.images = createImagesArray([
+        {'file': 'WhatRemains.jpg', 'caption': '© & TM 2023 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
+        {'file': 'Usurper.jpg', 'caption': '© & TM 2023 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
+        {'file': 'WolvesOfLothal.jpg', 'caption': '© & TM 2023 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
         {'file': 'DarkAspirations.jpg', 'caption': '© & TM 2022 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
         {'file': 'Geonosis.jpg', 'caption': '© & TM 2022 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},
+        {'file': 'Draven.jpg', 'caption': '© & TM 2023 Lucasfilm LTD. Under License With Atomic Mass Games. All Rights Reserved.'},
         {'file': 'Betty-Veronica.jpg'},
         {'file': 'Life Stolen.jpg'},
         {'file': 'AnUnderstanding.jpg', 'caption': '© & TM 2021 Lucasfilm LTD. Under License With Acme Archives Ltd. All Rights Reserved.'},

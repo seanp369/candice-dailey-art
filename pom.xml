@@ -27,7 +27,7 @@
         <angularjs.version>1.5.8</angularjs.version>
         <angular-bootstrap-lightbox.version>0.12.0</angular-bootstrap-lightbox.version>
         <angular-ui-bootstrap.version>2.2.0</angular-ui-bootstrap.version>
-        <bootstrap.version>3.3.7</bootstrap.version>
+        <bootstrap.version>3.4.0</bootstrap.version>
         <font-awesome.version>4.7.0</font-awesome.version>
         <jquery.version>1.12.4</jquery.version>
     </properties>
